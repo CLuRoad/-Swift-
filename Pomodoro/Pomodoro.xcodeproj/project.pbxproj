@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517560B21FC661530084AB9B /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517560B11FC661530084AB9B /* FocusView.swift */; };
+		517560B41FC6615F0084AB9B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517560B31FC6615F0084AB9B /* TimerView.swift */; };
+		517560B61FC670790084AB9B /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517560AF1FC6602B0084AB9B /* TimerType.swift */; };
 		71393C1C1FC5C11F00CF08D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71393C1B1FC5C11F00CF08D7 /* AppDelegate.swift */; };
 		71393C231FC5C12000CF08D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71393C221FC5C12000CF08D7 /* Assets.xcassets */; };
 		71393C261FC5C12000CF08D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71393C241FC5C12000CF08D7 /* LaunchScreen.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		517560AF1FC6602B0084AB9B /* TimerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerType.swift; sourceTree = "<group>"; };
+		517560B11FC661530084AB9B /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		517560B31FC6615F0084AB9B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		71393C181FC5C11F00CF08D7 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71393C1B1FC5C11F00CF08D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71393C221FC5C12000CF08D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,10 +60,10 @@
 		71393C1A1FC5C11F00CF08D7 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				71393C4A1FC5C1DE00CF08D7 /* Focus */,
 				71393C271FC5C12000CF08D7 /* Info.plist */,
 				71393C4D1FC5C35900CF08D7 /* StyleKit */,
 				71393C1B1FC5C11F00CF08D7 /* AppDelegate.swift */,
-				71393C4A1FC5C1DE00CF08D7 /* Focus */,
 				71393C491FC5C1BE00CF08D7 /* Support */,
 			);
 			path = Pomodoro;
@@ -76,6 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				71393C4B1FC5C1F500CF08D7 /* FocusViewController.swift */,
+				517560B11FC661530084AB9B /* FocusView.swift */,
+				517560B31FC6615F0084AB9B /* TimerView.swift */,
+				517560AF1FC6602B0084AB9B /* TimerType.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -159,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517560B41FC6615F0084AB9B /* TimerView.swift in Sources */,
+				517560B61FC670790084AB9B /* TimerType.swift in Sources */,
 				71393C1C1FC5C11F00CF08D7 /* AppDelegate.swift in Sources */,
 				71393C4F1FC5C37300CF08D7 /* TimeStyleKit.swift in Sources */,
 				71393C4C1FC5C1F500CF08D7 /* FocusViewController.swift in Sources */,
+				517560B21FC661530084AB9B /* FocusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,12 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     var focusViewController: FocusViewController?
     
-    
-
+    let kAlreadyStartedKey = "alreadyStarted"
+    let kRegisterNotificationSettings = "kRegisterNotificationSettings"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         customizeApperance()
+        registerDefaultUserDefaults()
         
         focusViewController = FocusViewController()
         
@@ -51,9 +52,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func customizeApperance() {
-        UINavigationBar.appearance().tintColor = UIColor.yellow
-    }
+    
 
 }
+
+extension AppDelegate {
+    
+    func customizeApperance() {
+        UINavigationBar.appearance().tintColor = UIColor.yellow
+        UINavigationBar.appearance().barTintColor = TimeStyleKit.backgroundColor
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: TimeStyleKit.timerColor]
+        
+    }
+    
+    func registerDefaultUserDefaults() {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
